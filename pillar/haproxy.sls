@@ -6,7 +6,7 @@ lb:
         acl host_foo hdr(host) -m dom foo
         use_backend foo_cluster if host_foo
     backends:
-      nac_cluster: |
+      foo_cluster: |
         stats enable
         stats hide-version
         stats scope .
